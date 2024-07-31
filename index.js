@@ -34,3 +34,5 @@ console.log(Num.properNumber(32323343));
 
 const sum = require("./Number");
 console.log(sum.sumNum(3, 3));
+
+// creation of the module and started to learn about NPM

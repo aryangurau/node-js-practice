@@ -5,6 +5,6 @@ const compareHash = (string, hashedString) =>
   bcrypt.compareSync(String(string), hashedString);
 
 const hash = genHash("Aryangurau123");
-console.log({hash});
+console.log({ hash });
 const checkPw = compareHash("Aryangurau123", hash);
-console.log({checkpw});
+console.log({ checkPw });

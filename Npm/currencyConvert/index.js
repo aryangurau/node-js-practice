@@ -18,7 +18,7 @@ const converter = (amountToconvert, from, to) => {
     .listen(3999);
   console.log("app is running");
 };
-converter(1, "USD", "NPR");
+converter(1, "USD", "EUR");
 
 //write a currency conversion code in js using npm package and npm modules
 // const converter = (amountToconvert, from, to) => {

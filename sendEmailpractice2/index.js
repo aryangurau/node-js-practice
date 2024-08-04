@@ -17,7 +17,7 @@ transporter.verify(function (error, success) {
     console.log("server is ready to take message");
   }
 });
-
+//setting up sender receiver,messages
 const mailer = async ({ from, to, subject, message }) => {
   const result = await transporter.sendMail({
     from,

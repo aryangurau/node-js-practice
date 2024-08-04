@@ -14,12 +14,12 @@ transporter.verify(function (error, success) {
   if (error) {
     console.log(error);
   } else {
-    console.log("Server is ready to take our messages");
+    console.log("server is ready to take message");
   }
 });
 
-const mailer = ({ from, to, subject, message }) => {
-  transporter.sendMail({
+const mailer = async ({ from, to, subject, message }) => {
+  await transporter.sendMail({
     from,
     to,
     subject,

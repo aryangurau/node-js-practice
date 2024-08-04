@@ -17,7 +17,7 @@ transporter.verify(function (error, success) {
   }
 });
 
-const mailer = ({ from, to, subject, message }) => {
+const mailer = async ({ from, to, subject, message }) => {
   const result = transporter.sendMail({
     from,
     to,

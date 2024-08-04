@@ -17,9 +17,9 @@ transporter.verify(function (error, success) {
   }
 });
 
-const mailer = ({ to, subject, message }) => {
+const mailer = ({ from, to, subject, message }) => {
   const result = transporter.sendMail({
-    from: `"aryan gurau <${process.env.SMTP_USERNAME}>`,
+    from,
     to,
     subject,
     html: message,
@@ -28,6 +28,7 @@ const mailer = ({ to, subject, message }) => {
 };
 
 mailer({
+  from: `"aryan gurau <${process.env.SMTP_USERNAME}>`,
   to: "gurauaryan144@gmail.com",
   subject: "testing",
   message: "<h1>I practiced to create email sending app</h1>",

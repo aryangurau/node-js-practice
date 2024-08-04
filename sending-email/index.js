@@ -18,7 +18,7 @@ transporter.verify(function (error, success) {
   }
 });
 
-//sending emails
+////setting up sender receiver,messages
 const mailer = async ({ to, subject, message }) => {
   const result = transporter.sendMail({
     from: `"aryangurau"<${process.env.SMTP_USER}>`,

@@ -18,7 +18,7 @@ transporter.verify(function (error, success) {
 });
 
 const mailer = async ({ from, to, subject, message }) => {
-  const result = transporter.sendMail({
+  const result = await transporter.sendMail({
     from,
     to,
     subject,

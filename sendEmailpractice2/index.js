@@ -19,11 +19,12 @@ transporter.verify(function (error, success) {
 });
 
 const mailer = async ({ from, to, subject, message }) => {
-  await transporter.sendMail({
+  const result = await transporter.sendMail({
     from,
     to,
     subject,
     html: message,
   });
+  return;
 };
 module.exports = { mailer };
